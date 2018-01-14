@@ -1,6 +1,8 @@
-nav {
-  display: inline;
-  position: relative;
+.nav-item {
+  // Affichage en ligne
+  display: inline-block;
+  // Désactiver les puces
+	list-style-type: none;
 }
 
 #navbar-right {
