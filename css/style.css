@@ -29,6 +29,9 @@
   color: rgba(255, 255, 255, 0.6);
   /* Ombres de séléction du texte */
   text-shadow: 0 -3px 3px #2980b9;
+  /* Transition + adaptation aux webkits */
+  transition: text-shadow 0.6s;
+  -webkit-transition: text-shadow 0.6s;
 }
 
 ::-moz-selection {
@@ -38,6 +41,19 @@
   color: rgba(255, 255, 255, 0.6);
   /* Ombres de séléction du texte */
   text-shadow: 0 -3px 3px #2980b9;
+  /* Transition + adaptation aux webkits */
+  transition: text-shadow 0.6s;
+  -webkit-transition: text-shadow 0.6s;
+}
+
+::selection:hover {
+/* Ombres de séléction du texte */
+  text-shadow: 0 -3px 5px #2980b9;
+}
+
+::-moz-selection {
+  /* Ombres de séléction du texte */
+  text-shadow: 0 -3px 5px #2980b9;
 }
 
 body {
