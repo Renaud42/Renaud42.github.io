@@ -24,7 +24,15 @@
 
 body {
   /* Police de base */
+  background-color: #ecf0f1;
   font-family: fantasy;
+  margin: 0px;
+}
+
+header {
+    /* Couleur de fond */
+    background-color: #bdc3c7;
+    padding-top: 5px;
 }
 
 header nav#navigation ul li.nav-item {
@@ -32,27 +40,36 @@ header nav#navigation ul li.nav-item {
   display: inline-block;
   /* Désactiver les puces */
   list-style-type: none;
+  /* Rembourages */
+  padding-top: 5px;
+  padding-left: 4%;
+  padding-right: 4%;
 }
 
 header nav#navigation ul li.nav-item a {
-  background-color: inherit;
   color: black;
+  font-size: 130%;
+  letter-spacing: 0px;
+  position: sticky;
   text-decoration: none;
-  padding: 5px;
+  transition: font-weight 0.5s, color 0.5s, letter-spacing 0.5s, text-shadow 0.6s;
+  -webkit-transition: font-weight 0.5s, color 0.5s, letter-spacing 0.5s, text-shadow 0.6s;
 }
 
-header nav#navigation ul li.nav-item-right {
-  /* Affichage en ligne */
-  display: inline-block;
-  /* Désactiver les puces */
-  list-style-type: none;
-  /* Position de la boîte */
-  position: right;
+header nav#navigation ul li.nav-item a:hover {
+  color: #16a085 !important;
+  font-weight: 100;
+  letter-spacing: 1px;
+  text-shadow: 0 0 4px white, 0 -1px 3px #bdc3c7, 2px -2px 15px #2ecc71;
 }
 
-header nav#navigation ul li.nav-item-right a {
-  background-color: inherit;
-  color: black;
-  text-decoration: none;
-  padding: 5px;
+#nav-separator {
+  border: 1px solid #bdc3c7;
+  box-shadow: 0px 8px 12px #000;
+}
+
+#banner {
+  height: 500px;
+  background-image: url('/img/banner.jpg');
+  background-size: cover;
 }
