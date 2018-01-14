@@ -1,6 +1,6 @@
 nav {
-  display: inline-block;
-  position: fixed;
+  display: inline;
+  position: relative;
 }
 
 #navbar-right {
