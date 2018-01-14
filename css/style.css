@@ -1,0 +1,8 @@
+nav {
+  display: inline-block;
+  position: fixed;
+}
+
+#navbar-right {
+  position: right;
+}
