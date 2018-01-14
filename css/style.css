@@ -22,17 +22,41 @@
 *
 */
 
+::selection {
+  /* Fond de sélection du texte */
+  background: transparent;
+  /* Couleur de sélection du texte */
+  color: rgba(255, 255, 255, 0.6);
+  /* Ombres de séléction du texte */
+  text-shadow: 0 -3px 3px #2980b9;
+}
+
+::-moz-selection {
+  /* Fond de sélection du texte */
+  background: transparent;
+  /* Couleur de sélection du texte */
+  color: rgba(255, 255, 255, 0.6);
+  /* Ombres de séléction du texte */
+  text-shadow: 0 -3px 3px #2980b9;
+}
+
 body {
-  /* Police de base */
+  /* Couleur de fond de la page */
   background-color: #ecf0f1;
+  /* Police de base */
   font-family: fantasy;
+  /* Marges */
   margin: 0px;
 }
 
 header {
-    /* Couleur de fond */
-    background-color: #bdc3c7;
-    padding-top: 5px;
+  /* Couleur de fond */
+  background-color: #bdc3c7;
+  /* Rembourages */
+  padding-top: 5px;
+  padding-bottom: 4px;
+  /* Position en Z */
+  z-index: 5 !important;
 }
 
 header nav#navigation ul li.nav-item {
@@ -47,29 +71,69 @@ header nav#navigation ul li.nav-item {
 }
 
 header nav#navigation ul li.nav-item a {
+  /* Couleur du texte */
   color: black;
+  /* Taille de la police */
   font-size: 130%;
+  /* Espacement entre les lettres */
   letter-spacing: 0px;
+  /* Position */
   position: sticky;
+  /* Décoration du texte */
   text-decoration: none;
+  /* Transition + adaptation aux webkits */
   transition: font-weight 0.5s, color 0.5s, letter-spacing 0.5s, text-shadow 0.6s;
   -webkit-transition: font-weight 0.5s, color 0.5s, letter-spacing 0.5s, text-shadow 0.6s;
 }
 
 header nav#navigation ul li.nav-item a:hover {
+  /* Couleur du texte */
   color: #16a085 !important;
+  /* Épaisseur de la police */
   font-weight: 100;
+  /* Espacement entre les lettres */
   letter-spacing: 1px;
+  /* Ombre du texte */
   text-shadow: 0 0 4px white, 0 -1px 3px #bdc3c7, 2px -2px 15px #2ecc71;
 }
 
-#nav-separator {
-  border: 1px solid #bdc3c7;
-  box-shadow: 0px 8px 12px #000;
+#banner {
+  /* Hauteur */
+  height: 500px;
+  /* Image de fond */
+  background-image: url('https://renaud42.github.io/img/banner.jpg');
+  background-size: cover;
+  /* Ombre de fond */
+  box-shadow: -2px 8px 80px #000 inset;
+  /* Couleur du texte */
+  color: white;
+  /* Position en Z */
+  z-index: 1;
 }
 
-#banner {
-  height: 500px;
-  background-image: url('/img/banner.jpg');
-  background-size: cover;
+#banner center h1 {
+  /* Taille de la police */
+  font-size: 400%;
+}
+
+#banner center p {
+  /* Taille de la police */
+  font-size: 300%;
+}
+
+#banner center p a {
+  /* Couleur du texte */
+  color: #e67e22;
+  /* Décoration du texte */
+  text-decoration: none;
+  /* Transition + adaptation aux webkits */
+  transition: color 0.5s, text-shadow 0.6s;
+  -webkit-transition: color 0.5s, text-shadow 0.6s;
+}
+
+#banner center p a:hover {
+  /* Couleur du texte */
+  color: #f39c12;
+  /* Ombre du texte */
+  text-shadow: 0 0 4px white, 0 -6px 4px #ffff33, 2px -11px 6px #ffdd33, -2px -14px 10px #ff8800;
 }
