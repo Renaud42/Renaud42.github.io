@@ -24,24 +24,38 @@ SOFTWARE.
 
 body {
   // Police de base
-  font-family: cursive;
+  font-family: sans-serif;
 }
 
-nav#navigation ul div li.nav-item {
+nav#navigation ul li.nav-item {
   // Affichage en ligne
   display: inline-block;
   // Désactiver les puces
   list-style-type: none;
 }
 
-nav#navigation ul div li.nav-item a {
+nav#navigation ul li.nav-item a {
   background-color: inherit;
   color: black;
   text-decoration: none;
   padding: 5px;
 }
 
-nav#navigation ul div#navbar-right {
+nav#navigation ul li.nav-item-right {
+  // Affichage en ligne
+  display: inline-block;
+  // Désactiver les puces
+  list-style-type: none;
+}
+
+nav#navigation ul li.nav-item-right a {
+  background-color: inherit;
+  color: black;
+  text-decoration: none;
+  padding: 5px;
+}
+
+nav#navigation ul li.nav-item-right {
   // Position de la boîte
   position: right;
 }
