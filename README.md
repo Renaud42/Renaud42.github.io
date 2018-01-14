@@ -4,7 +4,7 @@
 
 ## Français
 
-Ceci est mon **site web** ***Git***.
+Ceci est mon **site web** ***GitHub***.
 
 Vous pouvez consulter le code source [ici](https://github.com/Renaud42/Renaud42.github.io).
 
@@ -44,7 +44,7 @@ ou encore créer une redirection PHP :
 
 ## English
 
-This is my **Git** ***website***.
+This is my **GitHub** ***website***.
 
 You can see the source code [here](https://github.com/Renaud42/Renaud42.github.io).
 
