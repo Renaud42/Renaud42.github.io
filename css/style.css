@@ -27,21 +27,21 @@ body {
   font-family: serif;
 }
 
-header nav.navigation ul li.nav-item {
+header nav#navigation ul li.nav-item {
   /* Affichage en ligne */
   display: inline-block;
   /* Désactiver les puces */
   list-style-type: none;
 }
 
-header nav.navigation ul li.nav-item a {
+header nav#navigation ul li.nav-item a {
   background-color: inherit;
   color: black;
   text-decoration: none;
   padding: 5px;
 }
 
-header nav.navigation ul li.nav-item-right {
+header nav#navigation ul li.nav-item-right {
   /* Affichage en ligne */
   display: inline-block;
   /* Désactiver les puces */
@@ -50,7 +50,7 @@ header nav.navigation ul li.nav-item-right {
   position: right;
 }
 
-header nav.navigation ul li.nav-item-right a {
+header nav#navigation ul li.nav-item-right a {
   background-color: inherit;
   color: black;
   text-decoration: none;
