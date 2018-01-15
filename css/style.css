@@ -48,7 +48,7 @@ body {
   /* Couleur de fond de la page */
   background-color: #ecf0f1;
   /* Police de base */
-  font-family: fantasy;
+  font-family: "Arial", serif;
   /* Marges */
   margin: 0px;
 }
@@ -117,6 +117,8 @@ header nav#navigation ul li.nav-item a:hover {
 header nav#navigation ul#nav-responsive li.nav-item {
   /* Mode d'affichage du menu PC */
   display: hidden;
+  /* Opacité */
+  opacity: 0;
   /* Position */
   position: absolute;
   /* Position en Z */
@@ -127,6 +129,8 @@ header nav#navigation ul#nav-responsive li.nav-item {
   header nav#navigation ul#nav-large li.nav-item {
     /* Mode d'affichage du menu grands écrans */
     display: hidden;
+    /* Opacité */
+    opacity: 0;
     /* Position */
     position: absolute;
     /* Position en Z */
@@ -135,6 +139,8 @@ header nav#navigation ul#nav-responsive li.nav-item {
   header nav#navigation ul#nav-responsive li.nav-item {
     /* Mode d'affichage du menu responsive */
     display: inline-block;
+    /* Opacité */
+    opacity: 1;
     /* Position */
     position: relative;
     /* Position en Z */
