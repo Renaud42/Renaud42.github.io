@@ -97,7 +97,8 @@ SOFTWARE.
           	$(this).focus();
           	$(this).select();
           	document.execCommand('copy');
-          	$("#chapter1copy").text("<small>Lien copié dans le presse-papier !</small>").show().fadeOut(2000);
+          	$(".chapter1copy").text("<small>Lien copié dans le presse-papier !</small>").show().fadeOut(2000);
+          	$(".chapter1copy").text("🔗").show();
           });
         });
         //document.getElementById(id).innerHTML = '🔗 <small>Lien copié dans le presse-papier !</small>';

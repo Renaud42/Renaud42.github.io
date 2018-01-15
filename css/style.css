@@ -155,6 +155,17 @@ header nav#navigation ul#nav-responsive li.nav-item {
 /* BANNIÈRE */
 /************/
 
+@keyframes fade {
+  0% {opacity: 0}
+  100% {opacity: 1}
+}
+
+@keyframes fade2 {
+  0% {opacity: 0}
+  40% {opacity: 0}
+  100% {opacity: 1}
+}
+
 #banner {
   /* Hauteur */
   height: 500px;
@@ -197,6 +208,18 @@ header nav#navigation ul#nav-responsive li.nav-item {
   color: #f39c12;
   /* Ombre du texte */
   text-shadow: 0 0 4px black, 0 -6px 4px #ffff33, 2px -11px 6px #ffdd33, -2px -14px 10px #ff8800;
+}
+
+#banner center h1 {
+  /* Animation */
+  animation-name: fade;
+  animation-duration: 1s;
+}
+
+#banner center p {
+  /* Animation */
+  animation-name: fade2;
+  animation-duration: 2s;
 }
 
 /***********/
