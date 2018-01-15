@@ -213,13 +213,13 @@ header nav#navigation ul#nav-responsive li.nav-item {
 #banner center h1 {
   /* Animation */
   animation-name: fade;
-  animation-duration: 1s;
+  animation-duration: 0.7s;
 }
 
 #banner center p {
   /* Animation */
   animation-name: fade2;
-  animation-duration: 2s;
+  animation-duration: 1.5s;
 }
 
 /***********/
