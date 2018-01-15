@@ -128,7 +128,7 @@ header nav#navigation ul#nav-responsive li.nav-item {
   z-index: -99;
 }
 
-@media only screen and (max-width: 640px) {
+@media only screen and (max-width: 700px) {
   header nav#navigation ul#nav-large li.nav-item {
     /* Mode d'affichage du menu grands écrans */
     display: hidden;
@@ -206,4 +206,21 @@ header nav#navigation ul#nav-responsive li.nav-item {
 #content {
   /* Marges */
   margin: 20px;
+}
+
+#content h2 {
+  /* Taille du texte */
+  font-size: 25px;
+}
+
+#content h2 a {
+  /* Taille du texte */
+  font-size: 18px;
+  /* Décoration du texte */
+  text-decoration: none;
+}
+
+#content p {
+  /* Taille du texte */
+  font-size: 10%;
 }

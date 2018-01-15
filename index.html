@@ -38,6 +38,11 @@ SOFTWARE.
     <meta name="author" content="Renaud42">
     <!-- Viewport responsive -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- jQuery slim minified 3.2.1 -->
+    <script
+			  src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+			  integrity="sha256-k2WSCIexGzOj3Euiig+TlR8gA0EmPjuc79OEeY5L45g="
+			  crossorigin="anonymous"></script>
   </head>
   <body>
     <!-- Haut de page -->
@@ -54,6 +59,9 @@ SOFTWARE.
               <a href="#presentation">Présentation</a>
             </li>
             <li class="nav-item">
+              <a href="#projets">Projets</a>
+            </li>
+            <li class="nav-item">
               <a href="#competences">Compétences</a>
             </li>
             <li class="nav-item">
@@ -63,21 +71,38 @@ SOFTWARE.
           <ul id="nav-responsive">
             <!-- Items de la barre de navigation responsive -->
             <li class="nav-item">
-              <a href="#">🏠</a>
+              <a href="#" title="Accueil">🏠</a>
             </li>
             <li class="nav-item">
-              <a href="#presentation">🗨️</a>
+              <a href="#presentation" title="Présentation">🗨️</a>
             </li>
             <li class="nav-item">
-              <a href="#competences">💯</a>
+              <a href="#projets" title="Projets">⚙</a>
             </li>
             <li class="nav-item">
-              <a href="/index-en.html" style="color: #34495e;">🇬🇧</a>
+              <a href="#competences" title="Compétences">💯</a>
+            </li>
+            <li class="nav-item">
+              <a href="/index-en.html" style="color: #34495e;" title="English version">🇬🇧</a>
             </li>
           </ul>
         </nav>
       </center>
     </header>
+    <script>
+      // Fonction pour copier le lien
+      function copyLink(id) {
+        $(function() {
+        	$('#chapter1copy').click(function() {
+          	$(this).focus();
+          	$(this).select();
+          	document.execCommand('copy');
+          	$("#chapter1copy").text("<small>Lien copié dans le presse-papier !</small>").show().fadeOut(2000);
+          });
+        });
+        //document.getElementById(id).innerHTML = '🔗 <small>Lien copié dans le presse-papier !</small>';
+      }
+    </script>
     <div id="banner">
       <center>
         <!-- Sauts de ligne -->
@@ -89,11 +114,11 @@ SOFTWARE.
         <!-- Texte très important -->
         <h1>Bonjour</h1>
         <!-- Paragraphe -->
-        <p>Bienvenue sur le site de <a href="https://github.com/Renaud42" target="_blank">mon GitHub</a>.</p>
+        <p>Bienvenue sur le site de <a href="https://github.com/Renaud42" target="_blank" title="Renaud42 sur GitHub">mon GitHub</a>.</p>
       </center>
     </div>
     <div id="content">
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      <h2 id="presentation">Présentation <a href="#" id="chapter1copy" onclick='copyLink("chapter1copy");' title="Copier le lien de ce chapitre">🔗</a><div id="chapter1copy-link" style="opacity: 0; z-index: -100;">https://Renaud42.github.io/#presentation</div></h2>
     </div>
     <!-- Pied de page -->
     <footer>
