@@ -92,16 +92,14 @@ SOFTWARE.
     <script>
       // Fonction pour copier le lien
       function copyLink(id) {
-        $(function() {
-        	$('#chapter1copy').click(function() {
-          	$(this).focus();
-          	$(this).select();
-          	document.execCommand('copy');
-          	$(".chapter1copy").text("<small>Lien copié dans le presse-papier !</small>").show().fadeOut(2000);
-          	$(".chapter1copy").text("🔗").show();
-          });
-        });
-        //document.getElementById(id).innerHTML = '🔗 <small>Lien copié dans le presse-papier !</small>';
+        var link = "https://Renaud42.github.io/#" + id;
+        var $temp = $("<input>");
+
+        $("body").append($temp);
+        $temp.val(link).select();
+        document.execCommand("copy");
+        $temp.remove();
+        $("#chapter1copy").text("🔗 Lien copié dans le presse-papier !");
       }
     </script>
     <div id="banner">
@@ -119,7 +117,7 @@ SOFTWARE.
       </center>
     </div>
     <div id="content">
-      <h2 id="presentation">Présentation <a href="#" id="chapter1copy" onclick='copyLink("chapter1copy");' title="Copier le lien de ce chapitre">🔗</a><div id="chapter1copy-link" style="opacity: 0; z-index: -100;">https://Renaud42.github.io/#presentation</div></h2>
+      <h2 id="presentation">Présentation <a href="#" id="chapter1copy" onclick='copyLink("presentation");' title="Copier le lien de ce chapitre">🔗</a><div id="chapter1copy-link" style="opacity: 0; z-index: -100;">https://Renaud42.github.io/#presentation</div></h2>
     </div>
     <!-- Pied de page -->
     <footer>

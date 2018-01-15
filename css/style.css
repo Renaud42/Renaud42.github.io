@@ -237,6 +237,7 @@ header nav#navigation ul#nav-responsive li.nav-item {
 }
 
 #content h2 a {
+  color: gray !important;
   /* Taille du texte */
   font-size: 18px;
   /* Décoration du texte */
