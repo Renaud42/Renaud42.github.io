@@ -22,6 +22,9 @@
 *
 */
 
+/* Polices de Google Fonts */
+@import url('https://fonts.googleapis.com/css?family=Lato|Oswald');
+
 /*************************************/
 /* SÉLÉCTION DES ÉLÉMENTS DE LA PAGE */
 /*************************************/
@@ -48,7 +51,7 @@ body {
   /* Couleur de fond de la page */
   background-color: #ecf0f1;
   /* Police de base */
-  font-family: "Arial", serif;
+  font-family: 'Lato', sans-serif;
   /* Marges */
   margin: 0px;
 }
