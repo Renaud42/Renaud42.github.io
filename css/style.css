@@ -22,19 +22,27 @@
 *
 */
 
+/*************************************/
+/* SÉLÉCTION DES ÉLÉMENTS DE LA PAGE */
+/*************************************/
+
 ::selection {
   /* Fond de sélection du texte */
   background: transparent;
   /* Couleur de sélection du texte */
-  color: rgba(255, 255, 255, 0.6);
+  color: rgba(39, 174, 36, 0.6);
 }
 
 ::-moz-selection {
   /* Fond de sélection du texte */
   background: transparent;
   /* Couleur de sélection du texte */
-  color: rgba(255, 255, 255, 0.6);
+  color: rgba(39, 174, 36, 0.5);
 }
+
+/*********/
+/* CORPS */
+/*********/
 
 body {
   /* Couleur de fond de la page */
@@ -45,6 +53,10 @@ body {
   margin: 0px;
 }
 
+/********/
+/* MENU */
+/********/
+
 header {
   /* Couleur de fond */
   background-color: #bdc3c7;
@@ -53,6 +65,11 @@ header {
   padding-bottom: 4px;
   /* Position en Z */
   z-index: 5 !important;
+}
+
+header nav#navigation ul {
+  /* Rembourage gauche */
+  padding-left: 0;
 }
 
 header nav#navigation ul li.nav-item {
@@ -93,11 +110,50 @@ header nav#navigation ul li.nav-item a:hover {
   text-shadow: 0 0 4px white, 0 -1px 3px #bdc3c7, 2px -2px 15px #2ecc71;
 }
 
+/*******************/
+/* MENU RESPONSIVE */
+/*******************/
+
+header nav#navigation ul#nav-responsive li.nav-item {
+  /* Mode d'affichage du menu PC */
+  display: hidden;
+  /* Position */
+  position: absolute;
+  /* Position en Z */
+  z-index: -99;
+}
+
+@media only screen and (max-width: 640px) {
+  header nav#navigation ul#nav-large li.nav-item {
+    /* Mode d'affichage du menu grands écrans */
+    display: hidden;
+    /* Position */
+    position: absolute;
+    /* Position en Z */
+    z-index: -15;
+  }
+  header nav#navigation ul#nav-responsive li.nav-item {
+    /* Mode d'affichage du menu responsive */
+    display: inline-block;
+    /* Position */
+    position: relative;
+    /* Position en Z */
+    z-index: 15;
+  }
+}
+
+/*************/
+/* BANNIÈRE */
+/************/
+
 #banner {
   /* Hauteur */
   height: 500px;
   /* Image de fond */
   background-image: url('https://renaud42.github.io/img/banner.jpg');
+  /* Répétition de l'image de fond */
+  background-repeat: no-repeat;
+  /* Taille de l'image de fond */
   background-size: cover;
   /* Ombre de fond */
   box-shadow: -2px 8px 80px #000 inset;
@@ -131,5 +187,14 @@ header nav#navigation ul li.nav-item a:hover {
   /* Couleur du texte */
   color: #f39c12;
   /* Ombre du texte */
-  text-shadow: 0 0 4px white, 0 -6px 4px #ffff33, 2px -11px 6px #ffdd33, -2px -14px 10px #ff8800;
+  text-shadow: 0 0 4px black, 0 -6px 4px #ffff33, 2px -11px 6px #ffdd33, -2px -14px 10px #ff8800;
+}
+
+/***********/
+/* CONTENU */
+/***********/
+
+#content {
+  /* Marges */
+  margin: 20px;
 }
