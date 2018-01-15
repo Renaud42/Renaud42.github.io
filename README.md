@@ -20,7 +20,7 @@ Les polices d'écriture sont Lato crée par Łukasz Dziedzic & Oswald crée par 
 
 ### Langages de programmation utilisés
 
-Les languages HTML (HyperText Markup Language), CSS (Cascading Style Sheets) et JS (JavaScript) ont été utilisés.
+Les languages HTML (Langage de balisage hypertexte), CSS (Feuilles de style en cascade) et JS (JavaScript) ont été utilisés.
 
 
 ### Embarquer mon site web
