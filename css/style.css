@@ -335,7 +335,7 @@ header nav#navigation ul#nav-responsive li.nav-item {
   /* Ombre lumineuse sur le texte */
   box-shadow: 0px 0px 10px #bdc3c7;
   /* Hauteur */
-  height: 680px;
+  height: 700px;
   /* Marges */
   margin-left: 10px;
   margin-right: 10px;
@@ -349,7 +349,7 @@ header nav#navigation ul#nav-responsive li.nav-item {
 @media only screen and (max-width: 1260px) {
   #alpharp, #casingmods, #evonia {
     /* Hauteur */
-    height: 700px;
+    height: 720px;
     /* Largeur */
     width: 100%;
   }
