@@ -77,7 +77,7 @@ SOFTWARE.
               <a href="#presentation" title="Présentation">🗨️</a>
             </li>
             <li class="nav-item">
-              <a href="#projets" title="Projets">⚙</a>
+              <a href="#projets" title="Projets">📋</a>
             </li>
             <li class="nav-item">
               <a href="#competences" title="Compétences">💯</a>
@@ -91,15 +91,15 @@ SOFTWARE.
     </header>
     <script>
       // Fonction pour copier le lien
-      function copyLink(id) {
-        var link = "https://Renaud42.github.io/#" + id;
+      function copyLink(chapter, id) {
+        var link = "https://Renaud42.github.io/#" + chapter;
         var $temp = $("<input>");
 
         $("body").append($temp);
         $temp.val(link).select();
         document.execCommand("copy");
         $temp.remove();
-        $("#chapter1copy").text("🔗 Lien copié dans le presse-papier !");
+        $("#chapter" + id + "copy").text("🔗 Lien du chapitre " + id + " copié dans le presse-papier !");
       }
     </script>
     <div id="banner">
@@ -117,13 +117,28 @@ SOFTWARE.
       </center>
     </div>
     <div id="content">
-      <h2 id="presentation">Présentation <a href="#" id="chapter1copy" onclick='copyLink("presentation");' title="Copier le lien de ce chapitre">🔗</a><div id="chapter1copy-link" style="opacity: 0; z-index: -100;">https://Renaud42.github.io/#presentation</div></h2>
+      <!-- Présentation -->
+      <h2 id="presentation">Présentation <a href="#presentation" id="chapter1copy" onclick='copyLink("presentation", 1);' title="Copier le lien de ce chapitre">🔗</a></h2>
       <p>Je m'appelle Renaud, je suis né le 10 décembre 2003 et je suis Français.</p>
-      <p>Je jouais souvent aux jeux vidéos sur la Nintendo DS étant petit.</p>
-      <p>Un jour, j'ai souhaité en créer un, du coup je suis tombé dans le monde de l'informatique et surtout dans le domaine du développement</p>
-      <p>J'ai commencé par le Visual Basic à l'âge de 9 ans, âge de mon premier PC.</p>
-      <p>Je concevais de petites applications telles un petit bloc-note ou un navigateur</p>
+      <p>J'aime bien l'informatique, la musique et les sports non-collectifs.</p>
+      <p>Je jouais souvent aux jeux vidéos sur la console de jeu Nintendo DS étant petit.</p>
+      <p>Un jour, j'ai souhaité créer un jeu, du coup je suis tombé dans le monde de l'informatique et surtout dans le domaine du développement</p>
+      <p>J'ai commencé par le Visual Basic à l'âge de 9 ans, âge auquel j'ai eu mon premier ordinateur portable.</p>
+      <p>Je concevais de petites applications telles un petit bloc-note ou un navigateur web avancé.</p>
       <p>J'ai plus tard appris d'autres langages comme les langages du web, le Java et d'autres...</p>
+      <!-- Séparateur -->
+      <center><hr></center>
+      <!-- Projets -->
+      <h2 id="projets">Projets <a href="#projets" id="chapter2copy" onclick='copyLink("projets", 2);' title="Copier le lien de ce chapitre">🔗</a></h2>
+      <p>Mes projets seront ajoutés ici au fur et à mesure....</p>
+      <div id="box">
+        <div id="alpharp">
+          
+        </div>
+        <div id="lehtml">
+
+        </div>
+      </div>
     </div>
     <!-- Pied de page -->
     <footer>

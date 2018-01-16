@@ -226,25 +226,114 @@ header nav#navigation ul#nav-responsive li.nav-item {
 /* CONTENU */
 /***********/
 
+@keyframes turnTitle {
+  0% {opacity: 0}
+  60% {opacity: 0; transform: rotateX(0deg);}
+  100% {opacity: 1; transform: rotateX(-360deg);}
+}
+
+@keyframes paragraph {
+  0% {opacity: 0}
+  60% {opacity: 0; margin-left: 0%;}
+  90% {opacity: 0.7; margin-left: 0.45%;}
+  100% {opacity: 1; margin-left: 0.5%;}
+}
+
+@keyframes separatorAnimation {
+  0% {opacity: 0}
+  60% {opacity: 0; width: 10%;}
+  90% {opacity: 0.2; width: 19%;}
+  100% {opacity: 0.3; width: 20%;}
+}
+
+@keyframes boxshow {
+  0% {opacity: 0; width: 0px; margin-left: 0px; margin-right: 0px;};
+  50% {opacity: 1; width: 100px; margin-left: 5px; margin-right: 5px;};
+  60% {width: 90px; margin-left: 5px; margin-right: 5px;};
+  90% {width: 300px; margin-left: 10px; margin-right: 10px;};
+  100% {width: 400px; margin-left: 12px; margin-right: 12px;};
+}
+
 #content {
   /* Marges */
   margin: 20px;
+  margin-left: 40px;
+  margin-right: 40px;
 }
 
 #content h2 {
+  /* Animation */
+  animation-name: turnTitle;
+  animation-duration: 1.5s;
   /* Taille du texte */
-  font-size: 25px;
+  font-size: 30px;
 }
 
 #content h2 a {
+  /* Couleur du lien */
   color: gray !important;
   /* Taille du texte */
-  font-size: 18px;
+  font-size: 20px;
   /* Décoration du texte */
   text-decoration: none;
 }
 
 #content p {
+  /* Animation */
+  animation-name: paragraph;
+  animation-duration: 3s;
   /* Taille du texte */
-  font-size: 16px;
+  font-size: 20px;
+  /* Marge gauche */
+  margin-left: 0.5%;
+}
+
+#content hr {
+  /* Animation */
+  animation-name: separatorAnimation;
+  animation-duration: 5s;
+  /* Marges haut et bas */
+  margin-top: 20px;
+  margin-bottom: 20px;
+  /* Opacité */
+  opacity: 0.3;
+  /* Largeur */
+  width: 20%;
+}
+
+#chapter1copy, #chapter2copy, #chapter3copy {
+  /* Transition + adaptation aux webkits */
+  transition: text-shadow 0.5s;
+  -webkit-transition: text-shadow 0.5s;
+}
+
+#chapter1copy:hover, #chapter2copy:hover, #chapter3copy:hover {
+  /* Ombre lumineuse sur le texte */
+  text-shadow: 0px 0px 9px #777;
+}
+
+#box {
+  /* Mode d'affichage */
+  display: flex;
+  /* Largeur */
+  width: 100%;
+}
+
+#alpharp, #lehtml {
+  /* Animation */
+  animation-name: boxshow;
+  animation-duration: 8s;
+  /* Couleur de fond */
+  background-color: #bdc3c7;
+  /* Rayon de la bordure */
+  border-radius: 20px;
+  /* Ombre lumineuse sur le texte */
+  box-shadow: 0px 0px 10px #bdc3c7;
+  /* Hauteur */
+  height: 400px;
+  /* Marges */
+  margin-left: 10px;
+  margin-right: 10px;
+  /* Largeur */
+  width: 30%;
 }
