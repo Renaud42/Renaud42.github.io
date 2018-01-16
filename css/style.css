@@ -239,6 +239,12 @@ header nav#navigation ul#nav-responsive li.nav-item {
   100% {opacity: 1; margin-left: 0.5%;}
 }
 
+@keyframes fade3 {
+  0% {opacity: 0}
+  90% {opacity: 0; margin-left: 0.45%;}
+  100% {opacity: 1; margin-left: 0.5%;}
+}
+
 @keyframes separatorAnimation {
   0% {opacity: 0}
   60% {opacity: 0; width: 10%;}
@@ -248,8 +254,7 @@ header nav#navigation ul#nav-responsive li.nav-item {
 
 @keyframes boxshow {
   0% {opacity: 0; width: 0px; margin-left: 0px; margin-right: 0px;};
-  50% {opacity: 1; width: 100px; margin-left: 5px; margin-right: 5px;};
-  60% {width: 90px; margin-left: 5px; margin-right: 5px;};
+  80% {opacity: 1; width: 90px; margin-left: 5px; margin-right: 5px;};
   90% {width: 300px; margin-left: 10px; margin-right: 10px;};
   100% {width: 400px; margin-left: 12px; margin-right: 12px;};
 }
@@ -319,10 +324,10 @@ header nav#navigation ul#nav-responsive li.nav-item {
   width: 100%;
 }
 
-#alpharp, #lehtml {
+#alpharp, #casingmods, #evonia {
   /* Animation */
   animation-name: boxshow;
-  animation-duration: 8s;
+  animation-duration: 7s;
   /* Couleur de fond */
   background-color: #bdc3c7;
   /* Rayon de la bordure */
@@ -330,10 +335,86 @@ header nav#navigation ul#nav-responsive li.nav-item {
   /* Ombre lumineuse sur le texte */
   box-shadow: 0px 0px 10px #bdc3c7;
   /* Hauteur */
-  height: 400px;
+  height: 650px;
   /* Marges */
   margin-left: 10px;
   margin-right: 10px;
+  /* Transition + adaptation aux webkits */
+  transition: box-shadow 0.6s;
+  -webkit-transition: box-shadow 0.6s;
   /* Largeur */
-  width: 30%;
+  width: 33%;
+}
+
+@media only screen and (max-width: 1260px) {
+  #alpharp, #casingmods, #evonia {
+    /* Hauteur */
+    height: 725px;
+    /* Largeur */
+    width: 100%;
+  }
+
+  #box {
+    /* Mode d'affichage */
+    display: table;
+  }
+}
+
+#alpharp:hover, #casingmods:hover, #evonia:hover {
+  /* Ombre de la boîte */
+  box-shadow: 0px 0px 15px black;
+}
+
+h3 {
+  /* Animation */
+  animation-name: fade3;
+  animation-duration: 6s;
+  /* Taille de la police */
+  font-size: 20px;
+}
+
+a {
+  /* Décoration du texte */
+  text-decoration: none !important;
+}
+
+#alpharp p, #casingmods p, #evonia p, #alpharp ul, #casingmods ul, #evonia ul, #alpharp a, #casingmods a, #evonia a {
+  /* Animation */
+  animation-name: fade3;
+  animation-duration: 7s;
+  /* Taille de la police */
+  font-size: 17px;
+}
+
+.links a {
+  /* Bordure du lien */
+  border: 2px solid #16a085;
+  /* Couleur du lien */
+  color: black;
+  /* Gras du lien */
+  font-weight: bold;
+  /* Rembourages */
+  padding: 4px;
+  /* Décoration du texte */
+  text-decoration: none;
+  /* Transition + adaptation aux webkits */
+  transition: background-color 0.6s, border 0.5s, box-shadow 0.5s, color 0.5s, font-size 0.3s, padding 0.6s;
+  -webkit-transition: background-color 0.6s, border 0.5s, box-shadow 0.5s, color 0.5s, font-size 0.3s, padding 0.6s;
+}
+
+.links a:hover {
+  /* Couleur de fond du lien */
+  background-color: #3498db;
+  /* Bordure */
+  border: 2px solid #2980b9;
+  /* Ombre du lien */
+  box-shadow: 0px 0px 5px #2c3e50;
+  /* Couleur du lien */
+  color: white;
+  /* Taille de la police du lien */
+  font-size: 19px;
+  /* Rembourages */
+  padding: 8px;
+  /* Décoration du texte */
+  text-decoration: none;
 }
