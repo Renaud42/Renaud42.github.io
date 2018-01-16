@@ -349,7 +349,7 @@ header nav#navigation ul#nav-responsive li.nav-item {
 @media only screen and (max-width: 1260px) {
   #alpharp, #casingmods, #evonia {
     /* Hauteur */
-    height: 725px;
+    height: 680px;
     /* Largeur */
     width: 100%;
   }
@@ -378,7 +378,7 @@ a {
   text-decoration: none !important;
 }
 
-#alpharp p, #casingmods p, #evonia p, #alpharp ul, #casingmods ul, #evonia ul, #alpharp a, #casingmods a, #evonia a {
+#alpharp p, #casingmods p, #evonia p, #alpharp ul, #casingmods ul, #evonia ul, #alpharp a, #casingmods a, #evonia a, #alpharp img, #casingmods img, #evonia img {
   /* Animation */
   animation-name: fade3;
   animation-duration: 7s;
