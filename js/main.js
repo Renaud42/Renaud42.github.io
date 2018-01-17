@@ -44,14 +44,14 @@ var canvasWidth;
 var canvasHeight;
 var current;
 var diff;
-var context = document.getElementById("progressBar1").getContext('2d');
-var canvasWidth = context.canvas.width;
-var canvasHeight = context.canvas.height;
 var start = 4.72;
 var value = 80;
 
 // Fonction pour les barres de progresssion
-function startProgress1() {
+function startProgress1(context) {
+  canvasWidth = context.canvas.width;
+  canvasHeight = context.canvas.height;
+
   // Opération mathématique pour récupérer "diff"
   diff = ((current / 100) * Math.PI * 2 * 10).toFixed(2);
 
