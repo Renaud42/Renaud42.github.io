@@ -49,6 +49,8 @@ var value = 80;
 
 // Fonction pour les barres de progresssion
 function startProgress1(context) {
+  current = 0;
+  
   canvasWidth = context.canvas.width;
   canvasHeight = context.canvas.height;
 
