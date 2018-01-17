@@ -43,6 +43,8 @@ SOFTWARE.
 			  src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
 			  integrity="sha256-k2WSCIexGzOj3Euiig+TlR8gA0EmPjuc79OEeY5L45g="
 			  crossorigin="anonymous"></script>
+    <script
+        src="https://Renaud42.github.io/js/main.js"></script>
   </head>
   <body>
     <!-- Haut de page -->
@@ -89,19 +91,6 @@ SOFTWARE.
         </nav>
       </center>
     </header>
-    <script>
-      // Fonction pour copier le lien
-      function copyLink(chapter, id) {
-        var link = "https://Renaud42.github.io/#" + chapter;
-        var $temp = $("<input>");
-
-        $("body").append($temp);
-        $temp.val(link).select();
-        document.execCommand("copy");
-        $temp.remove();
-        $("#chapter" + id + "copy").text("🔗 Lien du chapitre " + id + " copié dans le presse-papier !");
-      }
-    </script>
     <div id="banner">
       <center>
         <!-- Sauts de ligne -->
