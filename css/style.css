@@ -501,7 +501,7 @@ a {
   transition: .3s linear;
   -webkit-transition: .3s linear;
   /* Largeur de l'élément */
-  width: 190%;
+  width: 200%;
 }
 
 .right .spinner {

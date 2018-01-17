@@ -43,11 +43,14 @@ function copyLink(chapter, id) {
 // Fonction pour la barre de progression
 function setProgressValue(id, value) {
   $(function(){
+      // Déclaration de variables
       var newValue = value * 3.6 - 45;
       var leftValue = (value - 50) * 3.6 - 45;
 
+      // Changement du texte de pourcentage
       $(id + " .percentage").text(value + " %");
 
+      // Gestion des propriétés CSS en fonction de la valeur
       if(value >= 0 && value <= 50) {
         $(id + " .right .spinner").css({
           "transform" : "rotate(" + newValue + "deg)"
@@ -67,5 +70,3 @@ function setProgressValue(id, value) {
       }
   });
 }
-
-setProgressValue("#circle1", 90);
