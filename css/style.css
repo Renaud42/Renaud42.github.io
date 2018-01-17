@@ -338,7 +338,7 @@ header nav#navigation ul#nav-responsive li.nav-item {
 #alpharp, #casingmods, #evonia {
   /* Animation */
   animation-name: boxShow;
-  animation-duration: 7s;
+  animation-duration: 5s;
   /* Couleur de fond */
   background-color: #bdc3c7;
   /* Rayon de la bordure */
