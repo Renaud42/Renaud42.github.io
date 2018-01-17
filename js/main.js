@@ -40,9 +40,8 @@ function copyLink(chapter, id) {
   $("#chapter" + id + "copy").text("🔗 Lien du chapitre " + id + " copié dans le presse-papier !");
 }
 
-var current = 0;
+var current;
 var start = 4.72;
-
 var diff;
 
 // Fonction pour les barres de progresssion
