@@ -389,6 +389,11 @@ a {
   text-decoration: none !important;
 }
 
+small {
+  animation-name: fade3;
+  animation-duration: 8s;
+}
+
 #alpharp p, #casingmods p, #evonia p, #alpharp ul, #casingmods ul, #evonia ul, #alpharp a, #casingmods a, #evonia a, #alpharp img, #casingmods img, #evonia img {
   /* Animation */
   animation-name: fade3;
@@ -436,12 +441,22 @@ a {
   /* Couleur de fond de la boîte */
   background-color: #ecf0f1;
   /* Mode d'affichage */
-  display: flex;
+  display: inline-flex;
   /* Hauteur de la boîte */
   height: auto;
 }
 
-#circle1, #circle2, #circle3, #circle4, #circle5, #circle6 {
+#progress-box {
+  /* Largeur d'une boîte */
+  width: 200px;
+}
+
+#progress-box-2 {
+  /* Largeur d'une boîte */
+  width: 200px;
+}
+
+#circle1, #circle2, #circle3, #circle4, #circle5, #circle6, #circle7, #circle8, #circle9, #circle10, #circle11, #circle12, #circle13, #circle14 {
   /* Couleur de fond */
   background-color: #ecf0f1;
   /* Rayon de la bordure (pour faire des bordures rondes, et donc 50% donne un rond) */
@@ -492,7 +507,7 @@ a {
   /* Rayon des bordures (pour faire des bordures rondes, et donc 50% donne un rond) */
   border-radius: 50%;
   /* Hauteur de l'élément */
-  height: 100%;
+  height: 80%;
   /* Position */
   position: absolute;
   /* Transformation */
@@ -501,7 +516,7 @@ a {
   transition: .3s linear;
   -webkit-transition: .3s linear;
   /* Largeur de l'élément */
-  width: 200%;
+  width: 160%;
 }
 
 .right .spinner {
