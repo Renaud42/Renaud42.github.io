@@ -252,11 +252,17 @@ header nav#navigation ul#nav-responsive li.nav-item {
   100% {opacity: 0.3; width: 20%;}
 }
 
-@keyframes boxshow {
+@keyframes boxShow {
   0% {opacity: 0; width: 0px; margin-left: 0px; margin-right: 0px;};
   80% {opacity: 1; width: 90px; margin-left: 5px; margin-right: 5px;};
   90% {width: 300px; margin-left: 10px; margin-right: 10px;};
   100% {width: 400px; margin-left: 12px; margin-right: 12px;};
+}
+
+@keyframes footerAnimation {
+  0% {opacity: 0};
+  90% {opacity: 0};
+  100% {opacity: 1};
 }
 
 #content {
@@ -324,9 +330,14 @@ header nav#navigation ul#nav-responsive li.nav-item {
   width: 100%;
 }
 
+#box img {
+  /* Largeur */
+  width: 20%;
+}
+
 #alpharp, #casingmods, #evonia {
   /* Animation */
-  animation-name: boxshow;
+  animation-name: boxShow;
   animation-duration: 7s;
   /* Couleur de fond */
   background-color: #bdc3c7;
@@ -393,6 +404,8 @@ a {
   color: black;
   /* Gras du lien */
   font-weight: bold;
+  /* Espacement des lettres du lien */
+  letter-spacing: 1px;
   /* Rembourages */
   padding: 4px;
   /* Décoration du texte */
@@ -417,4 +430,27 @@ a {
   padding: 8px;
   /* Décoration du texte */
   text-decoration: none;
+}
+
+/****************/
+/* PIED DE PAGE */
+/****************/
+
+footer {
+  /* Animation */
+  animation-name: footerAnimation;
+  animation-duration: 10s;
+  /* Couleur de fond du pied de page */
+  background-color: #2c3e50;
+  /* Couleur du texte du pied de page */
+  color: white;
+  /* Mode d'affichage du pied de page */
+  display: inline-block;
+  /* Hauteur du pied de page */
+  height: 30%;
+  /* Rembourages */
+  padding-top: 40px;
+  padding-bottom: 40px;
+  /* Largeur du pied de page */
+  width: 100%;
 }
