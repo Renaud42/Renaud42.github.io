@@ -172,7 +172,10 @@ SOFTWARE.
       <h2 id="competences">Compétences <a href="#competences" id="chapter3copy" onclick='copyLink("competences", 3);' title="Copier le lien de ce chapitre">🔗</a></h2>
       <div id="progress-bars">
         <!-- Barres de progression -->
-        <canvas id="progressBar1" width="100" height="100"></canvas>
+        <canvas id="progressBar1" width="70" height="70"></canvas>
+        <script>
+          var progress1 = setInterval(startProgress("progressBar1", 80, progress1), 50);
+        </script>
       </div>
     </div>
     <!-- Pied de page -->

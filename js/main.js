@@ -41,7 +41,7 @@ function copyLink(chapter, id) {
 }
 
 // Fonction pour les barres de progresssion
-function startProgress(id, value) {
+function startProgress(id, value, progress) {
   var context = document.getElementById(id).getContext('2d');
 
   var current = 0;
@@ -57,9 +57,9 @@ function startProgress(id, value) {
 
   // Ajout de contraintes CSS
 	context.clearRect(0, 0, canvasWidth, canvasHeight);
-	context.fillStyle = "#09F";
+	context.fillStyle = "orange";
 	context.lineWidth = 10;
-	context.strokeStyle = "#09F";
+	context.strokeStyle = "gray";
 	context.textAlign = "center";
 	context.fillText(current + " %", canvasWidth * .5, canvasHeight * .5 + 2, canvasWidth);
 	context.beginPath();
@@ -69,10 +69,8 @@ function startProgress(id, value) {
   // Condition qui vérifie si le nombre précisé en argument est atteint
 	if(current >= value){
     // Annulation du chronomètre
-		clearTimeout(progress1);
+		clearTimeout(progress);
 	}
   // Incrémentation du pourcentage actuel
   current++;
 }
-
-var progress1 = setInterval(startProgress("progressBar1", 80), 50);
