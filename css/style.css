@@ -441,7 +441,7 @@ a {
   height: auto;
 }
 
-.circle {
+#circle1, #circle2, #circle3, #circle4, #circle5, #circle6 {
   /* Couleur de fond */
   background-color: #ecf0f1;
   /* Rayon de la bordure (pour faire des bordures rondes, et donc 50% donne un rond) */
