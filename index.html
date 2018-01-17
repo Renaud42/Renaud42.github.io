@@ -105,6 +105,7 @@ SOFTWARE.
         <p>Bienvenue sur le site de <a href="https://github.com/Renaud42" target="_blank" title="Renaud42 sur GitHub">mon GitHub</a>.</p>
       </center>
     </div>
+    <!-- Contenu de la page avec les différents chapitres -->
     <div id="content">
       <!-- Présentation -->
       <h2 id="presentation">Pr&eacute;sentation <a href="#presentation" id="chapter1copy" onclick='copyLink("presentation", 1);' title="Copier le lien de ce chapitre">🔗</a></h2>
@@ -169,7 +170,13 @@ SOFTWARE.
       <center><hr></center>
       <!-- Compétences -->
       <h2 id="competences">Compétences <a href="#competences" id="chapter3copy" onclick='copyLink("competences", 3);' title="Copier le lien de ce chapitre">🔗</a></h2>
-
+      <div id="progress-bars">
+        <svg height="100" width="100" id="HTMLProgress">
+              <circle class="x-percentage-circle" cx="100" cy="100" r="60" stroke="#004C70" stroke-width="20" fill="#E0CC97"></circle>
+              <circle class="percentage-circle" cy="100" r="60" stroke="#E0A025" stroke-width="20"  stroke-dasharray="0,1000" fill="none"></circle>
+              <text x="50%" y="50%" text-anchor="middle" stroke="none" stroke-width="1px" dy=".3em" class="percentage-text">0%</text>
+        </svg>
+      </div>
     </div>
     <!-- Pied de page -->
     <footer>

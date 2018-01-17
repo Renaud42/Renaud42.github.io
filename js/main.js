@@ -76,3 +76,5 @@ function setProgress(progressId, value) {
         }
     }
 }
+
+setProgress("HTMLProgress", 60);
