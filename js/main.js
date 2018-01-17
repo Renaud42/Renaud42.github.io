@@ -40,41 +40,39 @@ function copyLink(chapter, id) {
   $("#chapter" + id + "copy").text("🔗 Lien du chapitre " + id + " copié dans le presse-papier !");
 }
 
-// Fonction de la barre de progression
-function setProgress(progressId, value) {
-    // Transformation en pourcentage
-    value = (value > 100) ? 100 : ((value < 0) ? 0 : value);
+// Fonction pour les barres de progresssion
+function startProgress(id, value) {
+  var context = document.getElementById(id).getContext('2d');
 
-    // Stockage de variables
-    var progress = 0;
-    var inputPercentage;
-    var percentage;
+  var current = 0;
+  var start = 4.72;
 
-    var percentageCircle = document.getElementById(progressId).getElementsByClassName("percentage-circle")[0];
-    var percentageText = document.getElementById(progressId).getElementsByClassName("percentage-text")[0];
+  var diff;
 
-    var sleep = setInterval(circleAnimation, 25);
+  var canvasWidth = context.canvas.width;
+  var canvasHeight = context.canvas.height;
 
-    // Fonction de l'animation du cercle
-    function circleAnimation() {
-        inputPercentage = (value / 100) * 382;
-        percentage = (progress / 100) * 382;
+  // Opération mathématique pour récupérer "diff"
+  diff = ((current / 100) * Math.PI * 2 * 10).toFixed(2);
 
-        // Changement du texte de pourcentage
-        percentageText.innerHTML = progress + " %";
+  // Ajout de contraintes CSS
+	context.clearRect(0, 0, canvasWidth, canvasHeight);
+	context.fillStyle = "#09F";
+	context.lineWidth = 10;
+	context.strokeStyle = "#09F";
+	context.textAlign = "center";
+	context.fillText(current + " %", canvasWidth * .5, canvasHeight * .5 + 2, canvasWidth);
+	context.beginPath();
+	context.arc(35, 35, 30, start, diff / 10 + start, false);
+	context.stroke();
 
-        // Si le pourcentage est plus grand que le pourcentage entré alors on arrête, sinon on continue en incrémentant "progress"
-        if (percentage >= inputPercentage) {
-            // On annule la boucle "sleep"
-            clearInterval(sleep);
-        } else {
-            // Incrémentation de "progress"
-            progress++;
-
-            // Ligne pour le style CSS du cercle
-            percentageCircle.style.strokeDasharray = percentage + ', 1000';
-        }
-    }
+  // Condition qui vérifie si le nombre précisé en argument est atteint
+	if(current >= value){
+    // Annulation du chronomètre
+		clearTimeout(progress1);
+	}
+  // Incrémentation du pourcentage actuel
+  current++;
 }
 
-setProgress("HTMLProgress", 60);
+var progress1 = setInterval(startProgress("progressBar1", 80), 50);

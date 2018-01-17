@@ -432,6 +432,15 @@ a {
   text-decoration: none;
 }
 
+#progress-bars {
+  /* Couleur de fond de la boîte */
+  background-color: #ecf0f1;
+  /* Mode d'affichage */
+  display: flex;
+  /* Hauteur de la boîte */
+  height: auto;
+}
+
 /****************/
 /* PIED DE PAGE */
 /****************/
