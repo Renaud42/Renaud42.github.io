@@ -438,6 +438,9 @@ small {
 }
 
 #progress-bars {
+  /* Animation */
+  animation-name: fade2;
+  animation-duration: 8s;
   /* Couleur de fond de la boîte */
   background-color: #ecf0f1;
   /* Mode d'affichage */
@@ -447,17 +450,11 @@ small {
 }
 
 #progress-box {
-  /* Animation */
-  animation-name: fade2;
-  animation-duration: 8s;
   /* Largeur d'une boîte */
   width: 200px;
 }
 
 #progress-box-2 {
-  /* Animation */
-  animation-name: fade2;
-  animation-duration: 10s;
   /* Largeur d'une boîte */
   width: 200px;
 }
