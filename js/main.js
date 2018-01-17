@@ -39,3 +39,33 @@ function copyLink(chapter, id) {
   // Remplacement du texte du div #chapter
   $("#chapter" + id + "copy").text("🔗 Lien du chapitre " + id + " copié dans le presse-papier !");
 }
+
+// Fonction pour la barre de progression
+function setProgressValue(id, value) {
+  $(function(){
+      var newValue = value * 3.6 - 45;
+      var leftValue = (value - 50) * 3.6 - 45;
+
+      $(id + " .percentage").text(value + " %");
+
+      if(value >= 0 && value <= 50) {
+        $(id + " .right .spinner").css({
+          "transform" : "rotate(" + newValue + "deg)"
+        });
+        $(id + " .left .spinner").css({
+          "transform" : "rotate(-45deg)"
+        });
+      } else if(value >= 50 && value <= 100) {
+        $(id + " .right .spinner").css({
+          "transform" : "rotate(135deg)"
+        });
+        setTimeout(function(){
+          $(id + " .left .spinner").css({
+            "transform" : "rotate(" + leftValue + "deg)"
+          });
+        }, 300);
+      }
+  });
+}
+
+setProgressValue("#circle1", 90);

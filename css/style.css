@@ -441,6 +441,73 @@ a {
   height: auto;
 }
 
+.circle {
+  /* Couleur de fond */
+  background-color: #ecf0f1;
+  /* Rayon de la bordure (pour faire des bordures rondes, et donc 50% donne un rond) */
+  border-radius: 50%;
+  /* Ombre pour afficher la progression */
+  box-shadow: inset 0 0 0 10px rgba(0, 0, 0, 0.1);
+  /* Hauteur du cercle */
+  height: 100px;
+  /* Position du cercle */
+  position: relative;
+  /* Largeur du cercle */
+  width: 100px;
+}
+
+.percentage {
+  /* Couleur du texte */
+  color: black;
+  /* Taille du texte */
+  font-size: 20px;
+  /* Position du texte */
+  position: absolute;
+  /* Alignement du texte */
+  text-align: center;
+  /* Position verticale du texte */
+  top: 50%;
+  /* Transformation */
+  transform: translate(0, -50%);
+  /* Largeur du texte */
+  width: 100%;
+}
+
+.left, .right {
+  /* Flottement */
+  float: left;
+  /* Hauteur du demi-cercle */
+  height: 100%;
+  /* Pour le responsive */
+  overflow: hidden;
+  /* Position */
+  position: relative;
+  /* Largeur du demi-cercle */
+  width: 50%;
+}
+
+.spinner {
+  /* Bordure */
+  border: 10px solid transparent;
+  /* Rayon des bordures (pour faire des bordures rondes, et donc 50% donne un rond) */
+  border-radius: 50%;
+  /* Hauteur de l'élément */
+  height: 100%;
+  /* Position */
+  position: absolute;
+  /* Transformation */
+  transform: rotate(-45deg);
+  /* Transition du remplissage et adaptation aux webkits */
+  transition: .3s linear;
+  -webkit-transition: .3s linear;
+  /* Largeur de l'élément */
+  width: 200%;
+}
+
+.right .spinner {
+  right: 0;
+}
+
 /****************/
 /* PIED DE PAGE */
 /****************/
@@ -460,6 +527,9 @@ footer {
   /* Rembourages */
   padding-top: 40px;
   padding-bottom: 40px;
+  /* Transition et adaptation aux webkits */
+  transition: linear .1s linear;
+  -webkit-transition: .1s linear;
   /* Largeur du pied de page */
   width: 100%;
 }
