@@ -42,16 +42,16 @@ function copyLink(chapter, id) {
 
 var canvasWidth;
 var canvasHeight;
+var current;
 var diff;
-
-var current = 0;
+var context = document.getElementById("progressBar1").getContext('2d');
+var canvasWidth = context.canvas.width;
+var canvasHeight = context.canvas.height;
 var start = 4.72;
+var value = 80;
 
 // Fonction pour les barres de progresssion
-function startProgress(value, progress, context) {
-  canvasWidth = context.canvas.width;
-  canvasHeight = context.canvas.height;
-
+function startProgress1() {
   // Opération mathématique pour récupérer "diff"
   diff = ((current / 100) * Math.PI * 2 * 10).toFixed(2);
 
@@ -69,7 +69,7 @@ function startProgress(value, progress, context) {
   // Condition qui vérifie si le nombre précisé en argument est atteint
 	if(current >= value) {
     // Annulation du chronomètre
-		clearTimeout(progress);
+		clearTimeout(progress1);
 	}
   // Incrémentation du pourcentage actuel
   current++;
