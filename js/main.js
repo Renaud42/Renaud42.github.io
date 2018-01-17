@@ -40,14 +40,14 @@ function copyLink(chapter, id) {
   $("#chapter" + id + "copy").text("🔗 Lien du chapitre " + id + " copié dans le presse-papier !");
 }
 
+var current = 0;
+var start = 4.72;
+
+var diff;
+
 // Fonction pour les barres de progresssion
 function startProgress(id, value, progress) {
   var context = document.getElementById(id).getContext('2d');
-
-  var current = 0;
-  var start = 4.72;
-
-  var diff;
 
   var canvasWidth = context.canvas.width;
   var canvasHeight = context.canvas.height;
@@ -67,7 +67,7 @@ function startProgress(id, value, progress) {
 	context.stroke();
 
   // Condition qui vérifie si le nombre précisé en argument est atteint
-	if(current >= value){
+	if(current >= value) {
     // Annulation du chronomètre
 		clearTimeout(progress);
 	}
