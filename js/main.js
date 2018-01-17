@@ -42,7 +42,7 @@ function copyLink(chapter, id) {
 
 var canvasWidth;
 var canvasHeight;
-var current;
+var current = 0;
 var diff;
 var start = 4.72;
 var value = 80;
