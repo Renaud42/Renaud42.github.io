@@ -40,24 +40,25 @@ function copyLink(chapter, id) {
   $("#chapter" + id + "copy").text("🔗 Lien du chapitre " + id + " copié dans le presse-papier !");
 }
 
-var current;
-var start = 4.72;
+var canvasWidth;
+var canvasHeight;
 var diff;
 
-// Fonction pour les barres de progresssion
-function startProgress(id, value, progress) {
-  var context = document.getElementById(id).getContext('2d');
+var current = 0;
+var start = 4.72;
 
-  var canvasWidth = context.canvas.width;
-  var canvasHeight = context.canvas.height;
+// Fonction pour les barres de progresssion
+function startProgress(value, progress, context) {
+  canvasWidth = context.canvas.width;
+  canvasHeight = context.canvas.height;
 
   // Opération mathématique pour récupérer "diff"
   diff = ((current / 100) * Math.PI * 2 * 10).toFixed(2);
 
   // Ajout de contraintes CSS
 	context.clearRect(0, 0, canvasWidth, canvasHeight);
-	context.fillStyle = "orange";
 	context.lineWidth = 10;
+	context.fillStyle = "orange";
 	context.strokeStyle = "gray";
 	context.textAlign = "center";
 	context.fillText(current + " %", canvasWidth * .5, canvasHeight * .5 + 2, canvasWidth);
