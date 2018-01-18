@@ -357,6 +357,21 @@ header nav#navigation ul#nav-responsive li.nav-item {
   width: 33%;
 }
 
+
+@media only screen and (max-width: 425px) {
+  #alpharp, #casingmods, #evonia {
+    /* Hauteur */
+    height: 750px;
+    /* Largeur */
+    width: 80% !important;
+  }
+
+  #box {
+    /* Mode d'affichage */
+    display: table;
+  }
+}
+
 @media only screen and (max-width: 1260px) {
   #alpharp, #casingmods, #evonia {
     /* Hauteur */
