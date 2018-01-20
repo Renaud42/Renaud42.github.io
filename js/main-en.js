@@ -22,35 +22,35 @@
 *
 */
 
-// Fonction pour copier le lien
+// Function for copying link
 function copyLink(chapter, id) {
-  // Stockage du lien formaté
-  var link = "https://Renaud42.github.io/#" + chapter;
-  // Création d'une entrée temporaire
+  // Storing formatted link
+  var link = "https://Renaud42.github.io/index-en.html/#" + chapter;
+  // Creating temporary input
   var $temp = $("<input>");
 
   $("body").append($temp);
-  // Sélection du texte de cette entrée
+  // Selecting this entry text
   $temp.val(link).select();
-  // Exécution de la commande "copier"
+  // Executing command "copy"
   document.execCommand("copy");
-  // Suppression de l'entrée temporaire
+  // Deleting the temporary input
   $temp.remove();
-  // Remplacement du texte du div #chapter
-  $("#chapter" + id + "copy").text("🔗 Lien du chapitre " + id + " copié dans le presse-papier !");
+  // Remplacing div content of #chapter
+  $("#chapter" + id + "copy").text("🔗 Chapter " + id + " link copied into clipboard !");
 }
 
-// Fonction pour la barre de progression
+// Function for the rounded progress bar
 function setProgressValue(id, value) {
   $(function(){
-      // Déclaration de variables
+      // Setting variables
       var newValue = value * 3.6 - 45;
       var leftValue = (value - 50) * 3.6 - 45;
 
-      // Changement du texte de pourcentage
+      // Editing percentage text
       $(id + " .percentage").text(value + " %");
 
-      // Gestion des propriétés CSS en fonction de la valeur
+      // Manage CSS properties depending on value
       if(value >= 0 && value <= 50) {
         $(id + " .right .spinner").css({
           "transform" : "rotate(" + newValue + "deg)"
