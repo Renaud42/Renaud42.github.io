@@ -462,16 +462,20 @@ small {
   display: inline-flex;
   /* Hauteur de la boîte */
   height: auto;
+  /* Taille maximale */
+  max-width: 100%;
+  /* Taille de la boîte */
+  width: 100%;
 }
 
-#progress-box {
+.progress-box {
   /* Largeur d'une boîte */
-  width: 200px;
+  max-width: 100%;
 }
 
-#progress-box-2 {
+.progress-box-2 {
   /* Largeur d'une boîte */
-  width: 200px;
+  max-width: 100%;
 }
 
 #circle1, #circle2, #circle3, #circle4, #circle5, #circle6, #circle7, #circle8, #circle9, #circle10, #circle11, #circle12, #circle13, #circle14 {
