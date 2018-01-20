@@ -43,6 +43,7 @@ function copyLink(chapter, id) {
 // Fonction pour la barre de progression
 function setProgressValue(id, value) {
   $(function(){
+      
       // Déclaration de variables
       var newValue = value * 3.6 - 45;
       var leftValue = (value - 50) * 3.6 - 45;

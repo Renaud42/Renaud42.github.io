@@ -361,9 +361,16 @@ header nav#navigation ul#nav-responsive li.nav-item {
 @media only screen and (max-width: 425px) {
   #alpharp, #casingmods, #evonia {
     /* Hauteur */
-    height: 750px;
+    height: 1000px !important;
     /* Largeur */
     width: 80% !important;
+  }
+
+  #alpharp a, #casingmods a, #evonia a {
+    /* Taille de la police du lien */
+    font-size: 9px;
+    /* Rembourages */
+    padding: 0px;
   }
 
   #box {
@@ -452,33 +459,20 @@ small {
   text-decoration: none;
 }
 
-#progress-bars {
+.progress-box {
   /* Animation */
   animation-name: fade2;
   animation-duration: 8s;
   /* Couleur de fond de la boîte */
   background-color: #ecf0f1;
   /* Mode d'affichage */
-  display: inline-flex;
-  /* Hauteur de la boîte */
-  height: auto;
-  /* Taille maximale */
-  max-width: 100%;
-  /* Taille de la boîte */
-  width: 100%;
+  display: inline-block;
+  /* Rembourages gauches et droites */
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
-.progress-box {
-  /* Largeur d'une boîte */
-  max-width: 100%;
-}
-
-.progress-box-2 {
-  /* Largeur d'une boîte */
-  max-width: 100%;
-}
-
-#circle1, #circle2, #circle3, #circle4, #circle5, #circle6, #circle7, #circle8, #circle9, #circle10, #circle11, #circle12, #circle13, #circle14 {
+#circle1, #circle2, #circle3, #circle4, #circle5, #circle6, #circle7, #circle8, #circle9, #circle10, #circle11, #circle12, #circle13, #circle14, #circle15 {
   /* Couleur de fond */
   background-color: #ecf0f1;
   /* Rayon de la bordure (pour faire des bordures rondes, et donc 50% donne un rond) */
