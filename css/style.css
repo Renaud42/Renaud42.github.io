@@ -335,6 +335,18 @@ header nav#navigation ul#nav-responsive li.nav-item {
   width: 20%;
 }
 
+#box2 {
+  /* Mode d'affichage */
+  display: flex;
+  /* Largeur */
+  width: 100%;
+}
+
+#box2 img {
+  /* Largeur */
+  width: 20%;
+}
+
 #alpharp, #casingmods, #evonia {
   /* Animation */
   animation-name: boxShow;
@@ -354,16 +366,42 @@ header nav#navigation ul#nav-responsive li.nav-item {
   width: 33%;
 }
 
+#veloniamc {
+  /* Animation */
+  animation-name: boxShow;
+  animation-duration: 5.5s;
+  /* Couleur de fond */
+  background-color: #bdc3c7;
+  /* Rayon de la bordure */
+  border-radius: 20px;
+  /* Ombre lumineuse sur le texte */
+  box-shadow: 0px 0px 10px #bdc3c7;
+  /* Hauteur */
+  height: 730px;
+  /* Marges */
+  margin-left: 10px;
+  margin-right: 10px;
+  /* Largeur */
+  width: 33%;
+}
+
 
 @media only screen and (max-width: 425px) {
-  #alpharp, #casingmods, #evonia {
+  #alpharp, #casingmods, #evonia, #veloniamc {
     /* Hauteur */
     height: 1000px !important;
     /* Largeur */
     width: 80% !important;
   }
 
-  #alpharp a, #casingmods a, #evonia a {
+  #alpharp a, #casingmods a, #evonia a, #veloniamc a {
+    /* Taille de la police du lien */
+    font-size: 9px;
+    /* Rembourages */
+    padding: 0px;
+  }
+
+  #veloniamc a {
     /* Taille de la police du lien */
     font-size: 9px;
     /* Rembourages */
@@ -377,7 +415,7 @@ header nav#navigation ul#nav-responsive li.nav-item {
 }
 
 @media only screen and (max-width: 1260px) {
-  #alpharp, #casingmods, #evonia {
+  #alpharp, #casingmods, #evonia, #veloniamc {
     /* Hauteur */
     height: 750px;
     /* Largeur */
@@ -408,7 +446,7 @@ small {
   animation-duration: 8s;
 }
 
-#alpharp p, #casingmods p, #evonia p, #alpharp ul, #casingmods ul, #evonia ul, #alpharp a, #casingmods a, #evonia a, #alpharp img, #casingmods img, #evonia img {
+#alpharp p, #casingmods p, #evonia p, #veloniamc p, #alpharp ul, #casingmods ul, #evonia ul, #veloniamc ul, #alpharp a, #casingmods a, #evonia a, #veloniamc a, #alpharp img, #casingmods img, #evonia img, #veloniamc img {
   /* Animation */
   animation-name: fade3;
   animation-duration: 7s;
