@@ -37,7 +37,7 @@ function copyLink(chapter, id) {
   // Suppression de l'entrée temporaire
   $temp.remove();
   // Remplacement du texte du div #chapter
-  $("#chapter" + id + "copy").text("🔗 Lien du chapitre " + id + " copié dans le presse-papier !");
+  $("#chapter" + id + "copy").text("¶ Lien du chapitre " + id + " copié dans le presse-papier !");
 }
 
 // Fonction pour la barre de progression

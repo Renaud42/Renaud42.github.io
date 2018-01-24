@@ -37,7 +37,7 @@ function copyLink(chapter, id) {
   // Deleting the temporary input
   $temp.remove();
   // Remplacing div content of #chapter
-  $("#chapter" + id + "copy").text("🔗 Chapter " + id + " link copied into clipboard !");
+  $("#chapter" + id + "copy").text("¶ Chapter " + id + " link copied into clipboard !");
 }
 
 // Function for the rounded progress bar
