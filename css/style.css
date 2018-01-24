@@ -366,7 +366,7 @@ header nav#navigation ul#nav-responsive li.nav-item {
   width: 33%;
 }
 
-#veloniamc {
+#veloniamc, #minecity {
   /* Animation */
   animation-name: boxShow;
   animation-duration: 5.5s;
@@ -387,21 +387,14 @@ header nav#navigation ul#nav-responsive li.nav-item {
 
 
 @media only screen and (max-width: 425px) {
-  #alpharp, #casingmods, #evonia, #veloniamc {
+  #alpharp, #casingmods, #evonia, #veloniamc, #minecity {
     /* Hauteur */
     height: 1000px !important;
     /* Largeur */
     width: 80% !important;
   }
 
-  #alpharp a, #casingmods a, #evonia a, #veloniamc a {
-    /* Taille de la police du lien */
-    font-size: 9px;
-    /* Rembourages */
-    padding: 0px;
-  }
-
-  #veloniamc a {
+  #alpharp a, #casingmods a, #evonia a, #veloniamc a, #minecity a {
     /* Taille de la police du lien */
     font-size: 9px;
     /* Rembourages */
@@ -415,7 +408,7 @@ header nav#navigation ul#nav-responsive li.nav-item {
 }
 
 @media only screen and (max-width: 1260px) {
-  #alpharp, #casingmods, #evonia, #veloniamc {
+  #alpharp, #casingmods, #evonia, #veloniamc, #minecity {
     /* Hauteur */
     height: 750px;
     /* Largeur */
