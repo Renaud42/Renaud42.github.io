@@ -453,6 +453,14 @@ small {
   /* Taille de la police */
   font-size: 17px;
 }
+/* J'ai coupé le CSS en deux, parce qu'il voulait pas je sais pas pourquoi :/ */
+#minecity p, #minecity ul, #minecity a, #minecity img {
+  /* Animation */
+  animation-name: fade3;
+  animation-duration: 7s;
+  /* Taille de la police */
+  font-size: 17px;
+}
 
 .links a {
   /* Bordure du lien */
