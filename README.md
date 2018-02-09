@@ -1,6 +1,6 @@
 # Renaud42.github.io
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://github.com/Renaud42/Renaud42.github.io/blob/master/LICENSE)
 
 ![GitHub Logo](https://avatars0.githubusercontent.com/u/28383784?s=115&v=4)
 
