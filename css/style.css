@@ -595,3 +595,12 @@ footer {
   /* Largeur du pied de page */
   width: 100%;
 }
+
+/****************/
+/* PAGE D'ERREUR */
+/****************/
+
+#error {
+  /* Top position */
+  top: 50%;
+}
