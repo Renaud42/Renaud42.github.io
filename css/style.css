@@ -366,7 +366,7 @@ header nav#navigation ul#nav-responsive li.nav-item {
   width: 33%;
 }
 
-#prsurvival, #minecity {
+#paradither, #minecity {
   /* Animation */
   animation-name: boxShow;
   animation-duration: 5.5s;
@@ -387,14 +387,14 @@ header nav#navigation ul#nav-responsive li.nav-item {
 
 
 @media only screen and (max-width: 425px) {
-  #alpharp, #casingmods, #evonia, #prsurvival, #minecity {
+  #alpharp, #casingmods, #evonia, #paradither, #minecity {
     /* Hauteur */
     height: 1000px !important;
     /* Largeur */
     width: 80% !important;
   }
 
-  #alpharp a, #casingmods a, #evonia a, #prsurvival a, #minecity a {
+  #alpharp a, #casingmods a, #evonia a, #paradither a, #minecity a {
     /* Taille de la police du lien */
     font-size: 9px;
     /* Rembourages */
@@ -408,7 +408,7 @@ header nav#navigation ul#nav-responsive li.nav-item {
 }
 
 @media only screen and (max-width: 1260px) {
-  #alpharp, #casingmods, #evonia, #prsurvival, #minecity {
+  #alpharp, #casingmods, #evonia, #paradither, #minecity {
     /* Hauteur */
     height: 750px;
     /* Largeur */
@@ -439,7 +439,7 @@ small {
   animation-duration: 8s;
 }
 
-#alpharp p, #casingmods p, #evonia p, #prsurvival p, #alpharp ul, #casingmods ul, #evonia ul, #prsurvival ul, #alpharp a, #casingmods a, #evonia a, #prsurvival a, #alpharp img, #casingmods img, #evonia img, #prsurvival img {
+#alpharp p, #casingmods p, #evonia p, #paradither p, #alpharp ul, #casingmods ul, #evonia ul, #paradither ul, #alpharp a, #casingmods a, #evonia a, #paradither a, #alpharp img, #casingmods img, #evonia img, #paradither img {
   /* Animation */
   animation-name: fade3;
   animation-duration: 7s;
@@ -601,6 +601,6 @@ footer {
 /****************/
 
 #error {
-  /* Top position */
-  top: 50%;
+  /* Marge du haut */
+  margin-top: 45%;
 }
