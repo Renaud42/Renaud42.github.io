@@ -30,7 +30,7 @@ Les languages HTML (Langage de balisage hypertexte), CSS (Feuilles de style en c
 ```html
 <!-- frameborder : 0 = pas de bordures, 1 = bordures -->
 <!-- width/height : définit la largeur/hauteur de l'iframe -->
-<iframe src="https://Renaud42.github.io/" width="400px" height="300px" frameborder="0" />
+<iframe src="https://Renaud42.github.io/" width="400px" height="300px" frameborder="0"></iframe>
 ```
 
 ou créer un lien vers mon site :
@@ -74,7 +74,7 @@ The HTML (HyperText Markup Language), CSS (Cascading Style Sheets), JS (JavaScri
 ```html
 <!-- frameborder : 0 = no borders, 1 = borders -->
 <!-- width/height : defines the width/height of this iframe -->
-<iframe src="https://Renaud42.github.io/" width="400px" height="300px" frameborder="0" />
+<iframe src="https://Renaud42.github.io/" width="400px" height="300px" frameborder="0"></iframe>
 ```
 
 or create a link to my website :
