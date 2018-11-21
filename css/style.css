@@ -347,7 +347,7 @@ header nav#navigation ul#nav-responsive li.nav-item {
   width: 20%;
 }
 
-#alpharp, #casingmods, #evonia {
+#firesoftwares, #alpharp, #casingmods {
   /* Animation */
   animation-name: boxShow;
   animation-duration: 5s;
@@ -366,7 +366,7 @@ header nav#navigation ul#nav-responsive li.nav-item {
   width: 33%;
 }
 
-#paradither, #minecity {
+#evonia, #paradither {
   /* Animation */
   animation-name: boxShow;
   animation-duration: 5.5s;
@@ -387,14 +387,14 @@ header nav#navigation ul#nav-responsive li.nav-item {
 
 
 @media only screen and (max-width: 425px) {
-  #alpharp, #casingmods, #evonia, #paradither, #minecity {
+  #firesoftwares, #alpharp, #casingmods, #evonia, #paradither {
     /* Hauteur */
     height: 1000px !important;
     /* Largeur */
     width: 80% !important;
   }
 
-  #alpharp a, #casingmods a, #evonia a, #paradither a, #minecity a {
+  #alpharp a, #casingmods a, #evonia a, #paradither a, #firesoftwares a {
     /* Taille de la police du lien */
     font-size: 9px;
     /* Rembourages */
@@ -408,7 +408,7 @@ header nav#navigation ul#nav-responsive li.nav-item {
 }
 
 @media only screen and (max-width: 1260px) {
-  #alpharp, #casingmods, #evonia, #paradither, #minecity {
+  #alpharp, #casingmods, #evonia, #paradither, #firesoftwares {
     /* Hauteur */
     height: 750px;
     /* Largeur */
