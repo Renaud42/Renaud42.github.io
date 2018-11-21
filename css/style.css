@@ -1,4 +1,4 @@
-/* MIT License
+﻿/* MIT License
 *
 * Copyright (c) 2018 Renaud
 *
@@ -439,7 +439,7 @@ small {
   animation-duration: 8s;
 }
 
-#alpharp p, #casingmods p, #evonia p, #paradither p, #alpharp ul, #casingmods ul, #evonia ul, #paradither ul, #alpharp a, #casingmods a, #evonia a, #paradither a, #alpharp img, #casingmods img, #evonia img, #paradither img {
+#alpharp p, #casingmods p, #evonia p, #paradither p, #alpharp ul, #casingmods ul, #evonia ul, #paradither ul, #alpharp a, #casingmods a, #evonia a, #paradither a, #alpharp img, #casingmods img, #evonia img, #paradither img, #firesoftwares a, #firesoftwares ul, #firesoftwares p, #firesoftwares img {
   /* Animation */
   animation-name: fade3;
   animation-duration: 7s;
